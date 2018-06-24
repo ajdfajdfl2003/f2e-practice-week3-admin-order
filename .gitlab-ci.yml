@@ -1,0 +1,14 @@
+pages:
+  image: node:10.1.0
+  script:
+    - "yarn install"
+    - "yarn run build"
+    - "cp public/index.html public/404.html"
+  cache:
+    paths:
+    - node_modules/
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
