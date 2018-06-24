@@ -6,7 +6,7 @@
         <li v-for="item in menus"
             :key="item.name"
             class="navbar-item-content">
-          <router-link :to="item.link">{{item.label}}</router-link>
+          <router-link :to="item.link" append>{{item.label}}</router-link>
         </li>
       </ul>
       <div class="navbar-user">ADMIN</div>
