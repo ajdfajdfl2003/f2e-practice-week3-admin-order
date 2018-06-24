@@ -24,10 +24,44 @@
       border: 1px solid #e2e2e2;
       box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.05);
       border-radius: 8px;
+
+      .h3-title {
+        font-weight: bold;
+        font-size: 24px;
+        text-align: left;
+        margin-top: 30px;
+        margin-left: 40px;
+      }
+
+      .chart {
+        border-radius: 15px;
+        margin-top: 1rem;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
     }
 
     .card-total {
       height: 138px;
+
+      .title {
+        font-size: 1rem;
+        margin-top: 30px;
+        margin-bottom: 16px;
+      }
+      .num {
+        font-weight: bold;
+        font-size: 36px;
+      }
+      .green {
+        color: #7ED321;
+      }
+      .red {
+        color: #D0021B;
+      }
+      .blue {
+        color: #4A90E2;
+      }
     }
 
     .card-activity {
