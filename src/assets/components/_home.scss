@@ -1,5 +1,15 @@
 .main {
   .container {
+    .green {
+      color: #7ED321;
+    }
+    .red {
+      color: #D0021B;
+    }
+    .blue {
+      color: #4A90E2;
+    }
+
     h2 {
       font-size: 24px;
       font-weight: bold;
@@ -30,6 +40,7 @@
         font-size: 24px;
         text-align: left;
         margin-top: 30px;
+        margin-bottom: 30px;
         margin-left: 40px;
       }
 
@@ -53,15 +64,6 @@
         font-weight: bold;
         font-size: 36px;
       }
-      .green {
-        color: #7ED321;
-      }
-      .red {
-        color: #D0021B;
-      }
-      .blue {
-        color: #4A90E2;
-      }
     }
 
     .card-activity {
@@ -70,6 +72,110 @@
 
     .card-two-column {
       height: 456px;
+    }
+
+    .list {
+      list-style: none;
+
+      .item {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        margin-right: 40px;
+        border-bottom: 1px solid #EBEBEB;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        .space-24 {
+          margin-bottom: 24px;
+          margin-top: 24px;
+          -webkit-margin-after: 24px;
+          -webkit-margin-before: 24px;
+        }
+
+        .space-8 {
+          margin-bottom: 8px;
+          margin-top: 8px;
+        }
+
+        .space-2 {
+          margin-bottom: 2px;
+          margin-top: 2px;
+          -webkit-margin-after: 2px;
+          -webkit-margin-before: 2px;
+        }
+
+        .total {
+          flex-grow: 1;
+          text-align: right;
+          font-size: 14px;
+          margin-top: 39px;
+          .num {
+            font-size: 20px;
+            font-weight: bold;
+          }
+        }
+
+        .detail {
+          display: inline-block;
+          flex-grow: 15;
+          text-align: left;
+          h4 {
+            font-size: 20px;
+            font-weight: bold;
+          }
+          .detail-text {
+            font-size: 16px;
+            color: #9B9B9B;
+            i {
+              text-align: center;
+              width: 14px;
+              margin-right: 7px;
+            }
+          }
+        }
+
+        .pic {
+          display: flex;
+          flex-grow: 1;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+
+        .name {
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          color: #9B9B9B;
+          flex-grow: 2;
+          i {
+            color: black;
+            width: 40px;
+            font-size: 40px;
+            margin-right: 20px;
+          }
+        }
+
+        .num {
+          font-size: 20px;
+          font-weight: 600;
+          flex-grow: 1;
+          text-align: right;
+        }
+
+        .rate {
+          font-size: 16px;
+          flex-grow: 1;
+          text-align: right;
+          i {
+            margin-right: 8px;
+          }
+        }
+      }
     }
   }
 }
